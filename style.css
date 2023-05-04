@@ -21,6 +21,7 @@ body {
   top: 40%;
   transform: translate(-50%, -50%);
   max-width: 450px;
+  max-height: 693px;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
@@ -140,8 +141,8 @@ body {
 @media (max-width: 576px) {
   .container {
     position: absolute;
-    top: 42%;
-    margin-top: 5px;
+    top: 50%;
+    margin-top: 20%;
     padding: 0;
     max-width: 400px;
   }
@@ -151,5 +152,15 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #e0e8ff;
+  }
+
+  .author {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  margin-top: 250px;
+  transform: translate(-50%, -50%);
   }
 }
