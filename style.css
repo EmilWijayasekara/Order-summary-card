@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.text-content {
+  padding: 45px;
+  text-align: center;
+}
+
+.title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.middle-text {
+  color: #797c9d;
+  margin-bottom: 25px;
+}
+
+.plan-details {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-details-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.plan-name-price {
+  margin-left: 20px;
+}
+
+.plan-name-price h4 {
+  font-size: 900;
+  color: hsl(223, 47%, 23%);
+  transition: color 0.3s ease;
+}
+
+.plan-name-price p {
+  opacity: 0.8;
+  color: #797c9d;
+}
+
+.plan-details-right {
+  font-weight: 900;
+  color: #797c9d;
+}
+
+.change {
+  text-decoration: none;
+}
+
+.payment-btn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 20px 0;
+  border-radius: 10px;
+  margin: 30px 0;
+  transition: background-color 2s ease;
+}
+
+.payment-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.author {
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  color: #a8afbd;
+  text-align: center;
+  max-width: 450px;
+  z-index: 0;
+  padding-bottom: 15px;
+}
+
+.author:hover {
+  color: hsl(245, 51%, 54%);
+  transition: ease-in-out;
+  transition: color 1s ease;
+}
+
+.author a {
+  color: #a8afbd;
+  text-decoration: none;
+}
+
+.author a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .container {
+    position: absolute;
+    top: 42%;
+    margin-top: 5px;
+    padding: 0;
+    max-width: 400px;
+  }
+
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e0e8ff;
+  }
+}
